@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio|Laiba Azam</title>
+    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <header>
+                <nav>
+                    <input id="nav-toggle" type="checkbox">
+                    <div class="logo">Port<strong>Folio</strong>
+                    </div>
+                    <ul class="links">
+                        <li class="list active"><a href="portfolio.html">Home</a>
+                        </li>
+                        <li class="list"><a href="myintro.html">My Intro</a></li>
+                        <!-- <li class="list"><a href="services.html">Services</a></li> -->
+                        <li class="list"><a href="cv.html">CV</a></li>
+                        <li class="list"><a href="projects.html">Projects</a></li>
+                    </ul>
+                    <label for="nav-toggle" class="icon">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </label>
+                </nav>
+            </header>
+        </div>
+        <div class="main">
+            <div class="info">
+                <div class="hello">Hello! I am </div>
+                <div class="name">Syeda Laiba Azam</div>
+                <div class="about">Computer System Engineer, Software Developer </div>
+                <a href="contact.html"><button class="btn">Contact Me</button></a>
+                <a href="https://drive.google.com/file/d/1MCWq1jfH3ETjpBd656ng7m8Y2hUB0GO1/view?usp=sharing"><button class="btn">Download CV</button></a>
+            </div>
+            <h1 class="quali" id="quali">Qualification</h1>
+            <div class="heading_quali">
+                <h2 onclick="educ()" class="quali_data quali" id="style_edu_1"><i class="uil uil-graduation-cap"></i>Education</h2>
+                <h2 onclick="skl()" class="quali_data quali" id="style_skill_1"><i class="uil uil-graduation-cap"></i>skill</h2>
+            </div>
+            <div class="qualification_content">
+                <div class="quali_data_content" id="education_data">
+                    <h4 class="edu"> <span class="rounder"></span>Computer and Information Engineering</h4>
+                    <div class="institute"><i class="uil uil-university"></i>NED University karachi</div>
+                    <div class="date"><i class="uil uil-calender"></i>Enrolled in 2020,currently persuading </div>
+                    <h4 class="edu"> <span class="rounder"></span>Higher Seconday Education</h4>
+                    <div class="institute"><i class="uil uil-university"></i>Saint Lawrence Collage Karachi</div>
+                    <div class="date"><i class="uil uil-calender"></i>2018-2020</div>
+                    <h4 class="edu"> <span class="rounder"></span>Seconday Education</h4>
+                    <div class="institute"><i class="uil uil-university"></i>Rahman Childern School Karachi</div>
+                    <div class="date"><i class="uil uil-calender"></i>2016-2018</div>
+                </div>
+                <div class="quali_data_content" id="skill_data">
+                    <h4 class="edu"> <span class="rounder"></span>Front_End Website Developement</h4>
+                    <div class="institute"><i class="uil uil-university"></i>NED University karachi</div>
+                    <h4 class="edu"> <span class="rounder"></span>Android App Development</h4>
+                    <div class="institute"><i class="uil uil-university"></i>Ned University</div>
+                    <h4 class="edu"> <span class="rounder"></span>Bootstrap Website</h4>
+                    <br>
+                    <h4 class="edu"> <span class="rounder"></span>Python Programming</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // var x = window.matchMedia("(max-width: 698px)")
+        // myfunction(x)
+        // x.addListener(myfunction)
+        var education = document.getElementById("education_data")
+        var skill = document.getElementById("skill_data")
+        var edu_style = document.getElementById("style_edu_1")
+        var skill_style = document.getElementById("style_skill_1")
+
+        function educ() {
+            var mediaQuery = window.matchMedia("(max-width: 698px)")
+            if (mediaQuery.matches) {
+                console.log('kuch hva tha')
+                skill.style.display = "none"
+                education.style.display = "block"
+                edu_style.style.color = "rgb(219, 202, 146)"
+                skill_style.style.color = "rgb(211, 210, 200)"
+
+
+            }
+        }
+
+        function skl() {
+            var mediaQuery = window.matchMedia("(max-width: 698px)")
+            if (mediaQuery.matches) {
+                console.log('kuch hva than hai')
+                education.style.display = "none"
+                skill.style.display = "block"
+                skill_style.style.color = "rgb(219, 202, 146)"
+                edu_style.style.color = "rgb(211, 210, 200)"
+            }
+        }
+    </script>
+</body>
+
+</html>
