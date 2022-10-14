@@ -1,5 +1,5 @@
 .heading {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .project {
@@ -27,7 +27,7 @@
     color: var(--main-color--2);
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .project_link_div {
@@ -38,7 +38,7 @@
 .project_link {
     color: rgb(211, 210, 200);
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: none;
 }
 
@@ -48,13 +48,13 @@
 
 @media screen and (max-width:698px) {
     .heading {
-        margin-top: 120px;
+        margin-top: 110px;
     }
 }
 
 @media screen and (max-width:400px) {
     .project_heading {
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .project_link {
         font-size: 1em;
